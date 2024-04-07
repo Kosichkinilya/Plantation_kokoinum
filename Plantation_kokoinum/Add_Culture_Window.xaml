@@ -1,0 +1,48 @@
+﻿<Window
+    x:Class="Plantation_kokoinum.Add_Culture_Window"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:Plantation_kokoinum"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="Add_Culture_Window"
+    Width="254"
+    Height="370"
+    mc:Ignorable="d">
+    <Grid>
+        <Label
+            Margin="0,6,0,321"
+            HorizontalAlignment="Center"
+            Content="Добавление культуры" />
+        <Label Margin="10,24,151,303" Content="Код" />
+        <TextBox
+            x:Name="tb_id"
+            Margin="10,51,10,251"
+            FontSize="20" />
+
+
+        <Label Margin="11,108,127,223" Content="Название" />
+        <TextBox
+            x:Name="tb_Name"
+            Margin="10,136,10,165"
+            FontSize="20" />
+
+        <Label Margin="10,194,128,137" Content="Семейство" />
+        <TextBox
+            x:Name="tb_Fam"
+            Margin="10,222,10,80"
+            FontSize="20" />
+
+        <Button
+            Margin="209,313,10,10"
+            Background="White"
+            Click="Add_Click"
+            Content="✔"
+            RenderTransformOrigin="0.0,0.0" />
+        <Button
+            Margin="169,313,50,10"
+            Background="White"
+            Click="Exit_Click"
+            Content="❌" />
+    </Grid>
+</Window>
